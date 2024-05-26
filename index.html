@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanihive</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="logo.png" alt="Penjual Sayur">
+                    <span class="logo-text">Penjual Sayur</span>
+                </a>
+                <button class="toggle-button">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Produk</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <img src="banner.jpg" alt="Banner Penjual Sayur">
+    </section>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Selamat Datang di Penjual Sayur</h1>
+            <p>Kami menyediakan berbagai macam sayuran segar untuk kebutuhan Anda.</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper commodo lorem, id vehicula
+                nisi ultrices ut.</p>
+        </div>
+    </section>
+
+    <!-- Tambahkan bagian lainnya seperti produk, kontak, dll. -->
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("navLinks");
+            if (navLinks.style.display === "block") {
+                navLinks.style.display = "none";
+            } else {
+                navLinks.style.display = "block";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

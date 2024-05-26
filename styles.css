@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    max-height: 40px;
+    /* Sesuaikan dengan tinggi yang diinginkan */
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.toggle-button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    /* Sembunyikan tombol toggle secara default */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Banner Section */
+.banner img {
+    padding-top: 100px;
+    width: 100%;
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Hero Section */
+.hero {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+/* Media query untuk responsif */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        /* Semua link akan disembunyikan pada layar kecil */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+        /* Tampilkan link saat tombol toggle diklik */
+    }
+
+    .nav-links li {
+        margin: 0;
+        /* Menghapus margin kiri */
+        padding: 10px;
+        /* Menambah padding untuk memberikan ruang di antara setiap link */
+        text-align: center;
+        /* Pusatkan teks */
+    }
+}
